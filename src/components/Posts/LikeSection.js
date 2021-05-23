@@ -6,7 +6,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
 
-const LikeSection = props => {
+function LikeSection(props) {
   // 🔥 Make sure the parent of LikeSection is passing the right props!
   const { likePost, numberOfLikes } = props;
 
@@ -23,7 +23,7 @@ const LikeSection = props => {
           <FontAwesomeIcon icon={faComment} />
         </div>
       </div>
-      <p className='like-number'>100 likes</p>
+      <p className='like-number'>   {numberOfLikes}   </p>
     </div>
   );
 };
